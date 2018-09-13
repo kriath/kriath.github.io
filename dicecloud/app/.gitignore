@@ -1,9 +1,0 @@
-.meteor/local
-.meteor/meteorite
-.demeteorized
-settings.json
-public/components
-public/_imports.html
-nohup.out
-node_modules
-dump
