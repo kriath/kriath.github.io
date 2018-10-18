@@ -1,2 +1,2 @@
 // Add here your own sections.
-sections = ['Social', 'Mail', 'Media', 'Shops', 'Programming', 'Blogs', 'Others', 'News', '4chan']
+sections = ['Social', 'Mail', 'Media', 'Finance', 'Programming', 'Work', 'Others', 'Google', '4chan', 'Dungeons & Dragons']
