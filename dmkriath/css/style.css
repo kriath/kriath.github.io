@@ -84,9 +84,9 @@ li {
   display: inline;
 }
 
-resourceList {
+.resourceList {
     font-family: sans-serif;
-    background-color: #000000;
+    background-color: #FFFFFF;
     float: left;
 }
 
