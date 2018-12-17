@@ -35,6 +35,12 @@ body {
     font-size: 10px;
 }
 
+.navigation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 /* Header/Blog Title */
 .header {
   padding: 30px;
