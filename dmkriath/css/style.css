@@ -35,12 +35,70 @@ body {
     font-size: 10px;
 }
 
-.navigation {
-    display: block;
+
+navButton {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #FF0000;
+}
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+li {
+  display: inline;
+}
+
+resourceList {
+    font-family: sans-serif;
+    background-color: #000000;
+    float: left;
+}
+
+/* .navigation {
+    background-color: black;
+    padding-top: 5px;
+    padding-left: 5px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-}
+    width: 100%;
+} */
+
 /* Header/Blog Title */
 .header {
   padding: 30px;
