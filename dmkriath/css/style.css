@@ -33,6 +33,10 @@ body {
   background: #ffffff;
 }
 
+.checked {
+  color: orange;
+}
+
 .versionMarker {
     font-family: monospace;
     font-size: 10px;
@@ -66,9 +70,9 @@ li {
   border-right: none;
 }
 
-li:last-child {
+/*li:last-child {
   border-right: none;
-}
+}*/
 
 li a {
 /* Needed for navbar, creates blocks */
