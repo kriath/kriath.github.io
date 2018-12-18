@@ -63,7 +63,7 @@ li {
   float: left;
   display: inline;
 /* Add a gray right border to all list items, except the last item (last-child) */
-  border-right: 1px solid #bbb;
+  border-right: none;
 }
 
 li:last-child {
