@@ -17,7 +17,7 @@ h1 {
     font-family: sans-serif;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 100%;
 }
 
 p {
@@ -35,6 +35,7 @@ body {
 
 .checked {
   color: orange;
+  padding-top: 5px;
 }
 
 .versionMarker {
@@ -179,3 +180,13 @@ li a:hover {
     padding: 0;
   }
 }
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.error {background-color: #2196F3;} /* Blue */
+.error:hover {background: #0b7dda;}
