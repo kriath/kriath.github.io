@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DM Kriath</title>
+    <script type="text/javascript">
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// this is a completely self-contained ability score generator,
+// implemented in HTML5 and JavaScript.
+//
+//   version 1.0        initial release
+//
+// written by drow [drow@bin.sh]
+// concept by Justisaur [justisaur@gmail.com]
+// http://creativecommons.org/licenses/by-nc/3.0/
+
+  var first_sum  = 27;
+  var second_sum = 25;
+  var third_sum  = 23;
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    </script>
+    <link rel="stylesheet" type="text/css" href="data:text/css;base64,LyogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKi8KLyogc2NvcmVzLmNzcyAqLwoKLyogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKi8KLyogc3RydWN0dXJlICovCgpib2R5IHsgbWFyZ2luOiAwcHg7IHBhZGRpbmc6IDBweDsKICBmb250LWZhbWlseTogJ0FzdWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDE0cHg7IH0KCi8qICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICovCi8qIGNvbW1vbiAqLwoKaDEgeyB0ZXh0LWFsaWduOiBjZW50ZXI7IGZvbnQtc2l6ZTogMTUwJTsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0KCmZvcm0geyBtYXJnaW46IDJleCAyZW07IHBhZGRpbmc6IDBweDsgfQppbnB1dCB7IG1hcmdpbi1yaWdodDogMC41ZW07IHBhZGRpbmc6IDAuNWV4IDAuNWVtOwogIGZvbnQtZmFtaWx5OiBNb25hY28sIG1vbm9zcGFjZTsgZm9udC1zaXplOiAxMXB4OyB9Cgp0YWJsZSB7IG1hcmdpbjogMHB4IDJlbTsgYm9yZGVyOiBub25lOyBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlOyB9CnRkIHsgcGFkZGluZzogMC41ZXggMC41ZW07IHRleHQtYWxpZ246IGxlZnQ7IHZlcnRpY2FsLWFsaWduOiB0b3A7IH0KdGQua2V5IHsgdGV4dC1hbGlnbjogcmlnaHQ7IGZvbnQtd2VpZ2h0OiBib2xkOyB9CgouY2VudGVyIHsgdGV4dC1hbGlnbjogY2VudGVyOyB9CnRhYmxlLmNlbnRlciB7IG1hcmdpbi1sZWZ0OiBhdXRvOyBtYXJnaW4tcmlnaHQ6IGF1dG87IH0KCi8qICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICovCi8qIHNjcmVlbiAqLwoKQG1lZGlhIHNjcmVlbiB7CiAgZm9ybSB7IGRpc3BsYXk6IGJsb2NrOyB9Cn0KCi8qICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICogKiAqICovCg==" />
+    <link rel="stylesheet" href="css/style.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+       <div class="versionMarker">v0.001 Alpha</div>
+        <div id="header" class="center">
+            <a href="index.html">
+                <img src="assets/dmkriath.png" alt="DM Kriath" id="headImage">
+            </a>
+        </div>
+        <div id="navigation" class="navigation">
+            <ul class="navButton">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="official.html">Official</a></li>
+            <li><a href="scores.html" class="active">Ability Score Generator</a></li>
+            <li style="float:right"><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div id="AbilityScoreGenerator">
+            <form method="get" onsubmit="return false;">
+            <h1>Ability Score Generator</h1>
+            <table class="center"><tr><td class="key">Ability Scores:</td><td class="value"><input id="ability_scores" size="30" /></td><td class="value"><input class="btn" type="button" value="Re-Roll!" onclick="new_scores();" /></td></tr></table>
+            </form>
+            <script type="text/javascript" src="data:text/javascript;base64,Ly8gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtIC0gLSAtCi8vIGFiaWxpdHkvc2NvcmVzLmpzCi8vCi8vIHdyaXR0ZW4gYnkgZHJvdyA8ZHJvd0BiaW4uc2g+Ci8vIGNvbmNlcHQgYnkgSnVzdGlzYXVyIDxqdXN0aXNhdXJAZ21haWwuY29tPgovLyBodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1uYy8zLjAvCgpmdW5jdGlvbiBuZXdfc2NvcmVzKCl7dmFyIGc9W2ZpcnN0X3N1bSxzZWNvbmRfc3VtLHRoaXJkX3N1bV0sZD1bXSxmPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJhYmlsaXR5X3Njb3JlcyIpLGE7Zm9yKGE9MDthPDM7YSsrKXt2YXIgYj1uX2RpY2UoMyw2KSxjPWdbYV0tYjtpZihjPjE4KXt2YXIgZT1jLTE4LGg9MTgtYi1lO2U9bl9kaWNlKDEsaCkrZTtiKz1lO2MtPWV9aWYoYjwxMCliPSIgIitiO2lmKGM8MTApYz0iICIrYztkLnB1c2goYixjKX1kLnNvcnQoKTtkLnJldmVyc2UoKTtmLnZhbHVlPSIgIitkLmpvaW4oIiwgIil9ZnVuY3Rpb24gbl9kaWNlKGcsZCl7dmFyIGY9MCxhO2ZvcihhPTA7YTxnO2ErKylmKz1NYXRoLmZsb29yKE1hdGgucmFuZG9tKCkqZCkrMTtyZXR1cm4gZn1uZXdfc2NvcmVzKCk7Cg=="></script>
+            <br>
+            <p><center>This Ability Score Generator was not coded or written by me, it is open source and I am merely hosting it. All credit goes to its original creators.</center></p>
+        </div>
+  </body>
+</html>
