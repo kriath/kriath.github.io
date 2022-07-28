@@ -1,0 +1,1 @@
+﻿Search-ADAccount -AccountExpiring -TimeSpan "365" | Select-Object Name,AccountExpirationDate | Sort-Object AccountExpirationDate | Export-Csv C:\Scripts\Output\Expiring-Accounts.csv
